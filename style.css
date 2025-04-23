@@ -1,18 +1,154 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header {
-    color:#fff;
+body {/*changes the bagckground color and font*/
+    background: radial-gradient(circle,#1e493d,#041915);
+    color: #bf8c73;
+    font-family: monospace;
+}
+.navigation{/*changes the background of the navigation bar and its border*/
+    border: 2px solid #041915;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.navigation ul{/*changes the navigation to be horizontal and centers it and removes the bullets*/
+    list-style: none;
+    display: flex;/*this makes the navigation bar horizontal*/
+    justify-content: center;/*this centers the navigation bar*/
+    padding: 0;
+    margin: 0;
+}
+.navigation li{
+    width: 120px;
+    margin: 0 auto;
+}
+.navigation a{/*controls the links of the navigation bar*/
+    background: #041915;
+    border: 2px solid #041915;
+    padding: 10px 10px;
+    border-radius: 3px;
+    color: #bf8c73;
+    display: inline-block;
+    text-decoration: none;  
     text-transform: uppercase;
+}
+.navigation a:hover{/*changes the color of the links when hovered*/
+    background: #1e493d;
+    color: #041915;
+    border: 2px solid #1e493d;
+}
+header, .article2 h2{/*changes the header of the page*/
+    font-size: 50px;
     text-align: center;
+    text-transform: uppercase;   
+    margin-bottom: 20px;
 }
-a[href*='github'] {
-    color:#fff;
+h3, .article2 p{/*this section deals with home of the page*/
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-a:hover {
-    color:gold;
+h3 a{/*controls the codeacademy link*/
+    text-decoration: none;
+    color: #ffffff;
 }
-figure {
-    height: 150px
+h3 a:hover{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+article {
+    border: 2px solid #ffffff; /* Adds a border around the article */   
+    border-radius: 5px;
+    margin: 5px; /* Adds space around the article */
+    padding: 10px;
+    display: flex; /* Makes the container a flexbox */
+    align-items: center; /* Aligns items at the center */
+    gap: 20px; /* Adds spacing between the image and text */
+    flex: 1; /* Allows the article to grow and fill available space */	
+    text-align: center; /* Aligns text to the left */
+    font-size: 20px; /* Sets the font size */	
+    margin-bottom: 50px; /* Adds space below the article */
+
+}
+
+article figure {
+    margin: 0; /* Removes default margin */
+    flex: 0; /* Prevents the image from stretching */ 
+}
+.About-me {
+    background-color: #bf8c73;
+    border: 2px solid #121212; /* Sets the border color for the paragraph */
+    border-radius: 20px; /* Rounds the corners of the paragraph */
+    font-size: 20px; /* Sets the font size for the paragraph */
+    margin: 5px; /* Adds space around the paragraph */
+    color: #121212; /* Sets the text color for the paragraph */
+    line-height: 20px; /* Sets the line height for the paragraph */
+    padding: 50px 200px;
+    margin-bottom: 20px;;
+}
+table {
+
+    margin: 20px auto;
+    width: 50%; /* Makes the table take up the full width */
+    border-collapse: collapse; /* Removes spacing between table cells */
+    font-size: 18px; /* Sets the font size */
+    text-align: center; /* Centers the text in the table */
+    color: #ffffff; /* Sets the text color */
+    border: 2px solid #ffffff; /* Adds a border around the table */
+    border-radius: 10px; /* Rounds the corners of the table */
+    overflow: hidden; /* Hides overflow content*/
+}
+th, td {
+    padding: 15px; /* Adds padding inside table cells */
+    border: 1px solid #ffffff; /* Adds a border between cells */
+}
+th {
+    background-color: #1e493d; /* Sets a solid background for table headers */
+    color: #bf8c73; /* Sets the text color for headers */
+    text-transform: uppercase; /* Makes header text uppercase */
+    font-weight: bold; /* Makes header text bold */
+}
+tr:nth-child(even) {
+    background-color: rgba(30, 73, 61, 0.8); /* Adds a semi-transparent background for even rows */
+}
+
+tr:hover {
+    background-color: #bf8c73; /* Changes the background color when a row is hovered */
+    color: #041915; /* Changes the text color when a row is hovered */
+}
+.article2 aside{
+    font-size: 20px; /* Sets the font size for the aside section */ 
+    text-align: center; /* Centers the text in the aside section */
+    margin: 20px; /* Adds space around the aside section */
+}
+.article2 aside a{
+    color: #ffffff;
+    text-decoration: none; /* Removes underline from links */
+}
+.article2 aside a:hover{
+    text-decoration: underline; /* Underlines links on hover */
+} 
+footer {
+    background: radial-gradient(circle, #1e493d, #041915); /* Applies the gradient background */
+    color: #bf8c73; /* Sets the text color */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds padding inside the footer */
+    border-top: 2px solid #bf8c73; /* Adds a border at the top of the footer */
+    font-size: 18px; /* Sets the font size */
+    font-family: monospace; /* Matches the font with the body content */
+}
+
+footer a {
+    color: #bf8c73; /* Sets the link color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the links bold */
+}
+
+footer a:hover {
+    color: #ffffff; /* Changes the link color on hover */
+    text-decoration: underline; /* Underlines the link on hover */
 }

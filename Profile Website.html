@@ -1,38 +1,40 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="./style.css" rel="stylesheet">
+        <link href="./home.html" rel="import">
         <title>Asemahle Budani Profile Website</title>
     </head>
     <body>
-        <nav><!--Navigation bar-->
+        <div class = "navigation">
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="home.html">Blog</a></li>
                 <li><a href="#About_me">About me</a></li>
                 <li><a href="#myExperience">Experience</a></li>
                 <li><a href="#Contact_me">Contact</a></li>
             </ul>
-        </nav>
-        <header><h1>Welcome</h1></header>
+        </div>
+        <header><h1>Welcome!</h1></header>
         <main>
             <section id="About_me">
+                <h3>Hi, I'm Asemahle Budani, currently pursuing a Computer Science Degree at the University of The Western Cape & Full-Stack Engineer professional certificate at <a href="https://www.codecademy.com/learn" target="_blank">CodeAcademy</a></h3>
                 <article>
-                    <p>I am Asemahle Budani, currently an aspiring full-stack engineer, and this website is one of my first projects that I have worked on.<br>
-                        What led me to wanting to become a full-stack engineer?<br>
-                        Well, it is the discovery of how much code controls what we daily use, from small things such as controlling the use of earphones up to launching rockets into orbit.</p>
+                    <p>I am 21 years old that is fascinated by web pages, applications and algorithms. </br> I am a passionate and dedicated individual with a strong interest in technology and programming. I have a solid foundation in computer science principles and a keen desire to learn and grow in the field of software development. </br>Computer Science has aided me in understanding the thought process of Computers, from binary code to the languages that we now use for Computers. </p>
+                    <figure>
+                        <img src="c:\Users\AQ\Downloads\image1.jpeg" width="300" height="300" alt="A picture of Asemahle Budani">
+                    </figure>
                 </article>
-                <aside>
-                    <p>I have never even dreamt of becoming a full-stack engineer. All I ever wanted was to become a Physicist in High School. Well, those dreams of becoming a Physicist became dull as I discovered that Maths is not my friend in University.</p>
-                </aside>
-                <figure><img src= "c:\Users\AQ\Downloads\image1.jpeg" width="300" height="300">
-                    <figcaption>A picture of me</figcaption>
-                </figure>
+                <div class="About-me"><p>The fundamentals of Computer Science have given me a proper understanding and experience of backend engineering. In my first year, we learnt about GitHub, Git and the language we used was Python. I also had a Physical Science module which surprisingly during its practicals we used python for analysis, thus gaining experience in using Python packages like Numpy and Pandas. The following year we use Java and learnt about algorithms, my love for algorithms began that year. I have linked my github, there you will find the algorithms I have built. I am pursuing the full-stack engineer professional certificate because I want to learn more about websites and applications and their deployments.</p>
+                </div>
             </section>
+
             <section id="myExperience">
-                <article>
+                <div class = "article2">
                     <h2>My Experience</h2>
-                    <p>Here is a summary of my skills and my profiency</p>
-                    <table border="1">
+                    <p>Here is a summary of my skills and my proficiency:</p>
+                    <table>
                         <thead>
                             <tr>
                                 <th>Skill</th>
@@ -46,7 +48,7 @@
                             </tr>
                             <tr>
                                 <td>CSS</td>
-                                <td>Beginner</td>
+                                <td>Intermediate</td>
                             </tr>
                             <tr>
                                 <td>JavaScript</td>
@@ -70,20 +72,19 @@
                             </tr>
                         </tbody>
                     </table>
-                    <aside>The mentioned skills above I have shown them throughout the creation of this website and some are shown in my <a href="https://github.com/AsemahleBudani-Dev" target="_blank">Github</a></aside>
+                    <aside>The mentioned skills above I have shown them throughout the creation of this website and some are shown in my <a href="https://github.com/AsemahleBudani-Dev" target="_blank" rel="noopener noreferrer">Github</a></aside>
                 </article>
             </section>
         </main>
+        <footer id="Contact_me">
+            <footer>
+                <p>&copy; 2025 Asemahle Budani. All rights reserved.</p>
+                <p>
+                    <a href="https://github.com/AsemahleBudani-Dev" target="_blank">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/asemahle-budani-203099362/" target="_blank">LinkedIn</a>
+                </p>
+            </footer>
+            </p>
+        </footer>
     </body>
-    <footer id="Contact_me">
-        <p>Email Adress: Asemahlemajor06@gmail.com</p>
-        <p>Whatsapp: +27 73 108 1464</p>
-        <p>Address:South Africa <br>
-                   Western Cape <br>
-                   P.O Box 6600 <br>
-                   Plettenberg Bay <br>
-                   KwaNokuthula <br>
-                   13181 Phase 5 <br>
-        </p>
-    </footer>
 </html>
